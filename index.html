@@ -81,46 +81,31 @@
 
   <script src="script.js"></script>
   <!-- Kontakt Section -->
-#contact {
-  padding: 40px 20px;
-  max-width: 600px;
-  margin: auto;
-  text-align: center;
-}
+<!-- Kontakt Section -->
+<section id="contact">
+  <h2>Kontakt</h2>
+  <p>Schreiben Sie uns Ihr Anliegen oder kontaktieren Sie uns direkt per Telefon oder WhatsApp.</p>
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-bottom: 20px;
-}
+  <!-- Kontaktformular -->
+  <form action="mailto:DEINEEMAIL@beispiel.de" method="post" enctype="text/plain" class="contact-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
+    <label for="email">E-Mail:</label>
+    <input type="email" id="email" name="email" required>
 
-.contact-form button {
-  background: #004080;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
+    <label for="message">Nachricht:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
 
-.contact-form button:hover {
-  background: #003366;
-}
+    <button type="submit">Absenden</button>
+  </form>
 
-.contact-info p {
-  margin: 8px 0;
-  font-size: 18px;
-}
+  <!-- Weitere Kontaktmöglichkeiten -->
+  <div class="contact-info">
+    <p>📞 Telefon: <a href="tel:+4915123456789">+49 151 23456789</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/4915123456789" target="_blank">Nachricht senden</a></p>
+  </div>
+</section>
 </section>
 </body>
 </html>
