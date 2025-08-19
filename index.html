@@ -16,95 +16,67 @@
     </nav>
   </header>
 
-  <!-- Slideshow Hero --><section class="hero">
-  <div class="slideshow">
-    <div class="slide fade">
-      <img src="sprinter2.jpg" alt="Sprinter.2">
+  <!-- Hero Slideshow -->
+  <section class="hero">
+    <div class="slideshow">
+      <div class="slide"><img src="images/truck1.jpg" alt="Transporter 1"></div>
+      <div class="slide"><img src="images/truck2.jpg" alt="Transporter 2"></div>
+      <div class="slide"><img src="images/truck3.jpg" alt="Transporter 3"></div>
     </div>
-    <div class="slide fade">
-      <img src="sprinter1.jpg" alt="sprinter1.jpg">
+    <div class="hero-text">
+      <h2>Schnell. Zuverlässig. Regional.</h2>
+      <a href="#contact" class="btn">Jetzt anfragen</a>
     </div>
-    <div class="slide fade">
-      <img src="wagon.jpg" alt="Kleiner Wagen">
-    </div>
-  </div>
+  </section>
 
-  <div class="hero-text">
-    <h2>Schnell. Zuverlässig. Regional.</h2>
-    <p>Ihr Partner für Umzüge, Entrümpelung & Kurierfahrten in Hamburg</p>
-    <a href="#contact" class="btn">Jetzt anfragen</a>
-  </div>
-</section>
-
+  <!-- Leistungen -->
   <section id="services">
     <h2>Unsere Leistungen</h2>
     <div class="grid">
       <div class="card">
-        <h3>Umzüge</h3>
-        <p>Privat- und Firmenumzüge in Hamburg und Umgebung.</p>
+        <h3>📦 Umzüge</h3>
+        <p>Schnell, sicher und zuverlässig – wir bringen Ihr Hab und Gut sicher ins neue Zuhause.</p>
       </div>
       <div class="card">
-        <h3>Kurierfahrten</h3>
-        <p>Schnelle & zuverlässige Lieferungen – auch Express möglich.</p>
+        <h3>🚛 Kurierfahrten</h3>
+        <p>Termingenaue Lieferungen für Privat- und Geschäftskunden in Hamburg & Umgebung.</p>
       </div>
       <div class="card">
-        <h3>Möbeltransport</h3>
-        <p>Sicherer Transport von Möbeln, auch kurzfristig buchbar.</p>
-      </div>
-      <div class="card">
-        <h3>Entrümpelung</h3>
-        <p>Professionelle Entrümpelungen von Wohnungen, Kellern und Büros.</p>
+        <h3>🏢 Möbel- & Büroumzüge</h3>
+        <p>Professionelle Transporte für Unternehmen – effizient und reibungslos.</p>
       </div>
     </div>
   </section>
 
+  <!-- Über uns -->
   <section id="about">
     <h2>Über uns</h2>
-    <p>
-      Wir sind ein Hamburger Familienunternehmen mit langjähriger Erfahrung in
-      Kurierdiensten, Umzügen und Entrümpelungen. Unsere Kunden schätzen unsere Zuverlässigkeit
-      und unser freundliches Team.
-    </p>
+    <p>Wir sind ein familiengeführtes Hamburger Unternehmen mit langjähriger Erfahrung in Umzügen und Kurierdiensten. 
+       Unser Team steht für Zuverlässigkeit, Professionalität und persönlichen Service.</p>
+    <p>Ob privater Umzug, Firmenumzug oder Express-Kurier – wir finden die passende Lösung.</p>
+    <a href="about.html" class="btn">Mehr erfahren</a>
   </section>
 
+  <!-- Kontakt -->
   <section id="contact">
-    <h2>Kontakt</h2>
-    <p>📍 Musterstraße 12, 20095 Hamburg</p>
-    <p>📞 040 / 123 456 78</p>
-    <p>✉️ info@kurier-umzug-hamburg.de</p>
-    <a href="mailto:info@kurier-umzug-hamburg.de" class="btn">E-Mail schreiben</a>
+    <h2>Kontaktieren Sie uns</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Ihr Name" required>
+      <input type="email" placeholder="Ihre E-Mail" required>
+      <textarea rows="5" placeholder="Ihre Nachricht"></textarea>
+      <button type="submit">Absenden</button>
+    </form>
+    <div class="contact-info">
+      <p>📞 Telefon: 040 / 123456</p>
+      <p>📱 WhatsApp: 0176 / 987654</p>
+      <p>✉️ E-Mail: info@umzug-hamburg.de</p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Kurier & Umzug Hamburg | Alle Rechte vorbehalten</p>
+    <p>© 2025 Kurier & Umzug Hamburg – Alle Rechte vorbehalten</p>
   </footer>
 
   <script src="script.js"></script>
-  <!-- Kontakt Section -->
-<!-- Kontakt Section -->
-<section id="contact">
-  <h2>Kontakt</h2>
-  <p>Schreiben Sie uns Ihr Anliegen oder kontaktieren Sie uns direkt per Telefon oder WhatsApp.</p>
-
-  <!-- Kontaktformular -->
-  <form action="mailto:DEINEEMAIL@beispiel.de" method="post" enctype="text/plain" class="contact-form">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">E-Mail:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="message">Nachricht:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-
-    <button type="submit">Absenden</button>
-  </form>
-
-  <!-- Weitere Kontaktmöglichkeiten -->
-  <div class="contact-info">
-    <p>📞 Telefon: <a href="tel:+4915123456789">+49 151 23456789</a></p>
-    <p>💬 WhatsApp: <a href="https://wa.me/4915123456789" target="_blank">Nachricht senden</a></p>
-  </div>
-</section>
 </body>
 </html>
