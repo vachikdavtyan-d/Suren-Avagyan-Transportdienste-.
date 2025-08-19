@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
@@ -11,65 +11,66 @@
     <h1>🚚 Kurier & Umzug Hamburg</h1>
     <nav>
       <a href="#services">Leistungen</a>
-      <a href="#about">Über uns</a>
+      <a href="about.html">Über uns</a>
+      <a href="fahrzeuge.html">Fahrzeuge</a>
       <a href="#contact">Kontakt</a>
     </nav>
   </header>
 
-  <!-- Hero Slideshow -->
+  <!-- Slideshow -->
   <section class="hero">
     <div class="slideshow">
-      <div class="slide"><img src="images/truck1.jpg" alt="Transporter 1"></div>
-      <div class="slide"><img src="images/truck2.jpg" alt="Transporter 2"></div>
-      <div class="slide"><img src="images/truck3.jpg" alt="Transporter 3"></div>
+      <div class="slide"><img src="images/truck1.jpg" alt="3,5t Sprinter"></div>
+      <div class="slide"><img src="images/truck2.jpg" alt="Sprinter extra lang"></div>
+      <div class="slide"><img src="images/truck3.jpg" alt="Kleiner Wagen"></div>
     </div>
     <div class="hero-text">
-      <h2>Schnell. Zuverlässig. Regional.</h2>
-      <a href="#contact" class="btn">Jetzt anfragen</a>
+      <h2>Schnell. Sicher. Zuverlässig.</h2>
+      <p>Ihr Partner für Kurier, Umzug und Entrümpelung in Hamburg</p>
+      <a href="about.html" class="btn">Mehr erfahren</a>
     </div>
   </section>
 
   <!-- Leistungen -->
-  <section id="services">
+  <section id="services" class="fade-in">
     <h2>Unsere Leistungen</h2>
     <div class="grid">
       <div class="card">
-        <h3>📦 Umzüge</h3>
-        <p>Schnell, sicher und zuverlässig – wir bringen Ihr Hab und Gut sicher ins neue Zuhause.</p>
+        <h3>Umzüge</h3>
+        <p>Privat- und Firmenumzüge – stressfrei und professionell.</p>
       </div>
       <div class="card">
-        <h3>🚛 Kurierfahrten</h3>
-        <p>Termingenaue Lieferungen für Privat- und Geschäftskunden in Hamburg & Umgebung.</p>
+        <h3>Kurierfahrten</h3>
+        <p>Expresszustellung in Hamburg und ganz Deutschland.</p>
       </div>
       <div class="card">
-        <h3>🏢 Möbel- & Büroumzüge</h3>
-        <p>Professionelle Transporte für Unternehmen – effizient und reibungslos.</p>
+        <h3>Entrümpelung</h3>
+        <p>Schnelle und fachgerechte Entrümpelung von Wohnungen & Häusern.</p>
       </div>
     </div>
   </section>
 
-  <!-- Über uns -->
-  <section id="about">
-    <h2>Über uns</h2>
-    <p>Wir sind ein familiengeführtes Hamburger Unternehmen mit langjähriger Erfahrung in Umzügen und Kurierdiensten. 
-       Unser Team steht für Zuverlässigkeit, Professionalität und persönlichen Service.</p>
-    <p>Ob privater Umzug, Firmenumzug oder Express-Kurier – wir finden die passende Lösung.</p>
-    <a href="about.html" class="btn">Mehr erfahren</a>
-  </section>
-
   <!-- Kontakt -->
-  <section id="contact">
-    <h2>Kontaktieren Sie uns</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Ihr Name" required>
-      <input type="email" placeholder="Ihre E-Mail" required>
-      <textarea rows="5" placeholder="Ihre Nachricht"></textarea>
+  <section id="contact" class="fade-in">
+    <h2>Kontakt</h2>
+    <p>Schreiben Sie uns Ihr Anliegen oder kontaktieren Sie uns direkt per Telefon oder WhatsApp.</p>
+
+    <form action="mailto:DEINEEMAIL@beispiel.de" method="post" enctype="text/plain" class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Nachricht:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
       <button type="submit">Absenden</button>
     </form>
+
     <div class="contact-info">
-      <p>📞 Telefon: 040 / 123456</p>
-      <p>📱 WhatsApp: 0176 / 987654</p>
-      <p>✉️ E-Mail: info@umzug-hamburg.de</p>
+      <p>📞 Telefon: <a href="tel:+4915123456789">+49 151 23456789</a></p>
+      <p>💬 WhatsApp: <a href="https://wa.me/4915123456789" target="_blank">Nachricht senden</a></p>
     </div>
   </section>
 
