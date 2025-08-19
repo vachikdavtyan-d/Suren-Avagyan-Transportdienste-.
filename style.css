@@ -1,60 +1,57 @@
-/* Grundstil */
+/* ====== Grund-Layout ====== */
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: #f9fbff;
   color: #333;
-  background: #f8faff; /* helles Weiß-Blau */
 }
 
-/* Header */
 header {
-  background: linear-gradient(90deg, #004080, #0066cc); /* Dunkel- zu Mittelblau */
-  color: #fff;
-  padding: 1rem;
+  background: #004080;
+  color: white;
+  padding: 15px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
   margin: 0;
+  font-size: 22px;
 }
 
-header nav a {
-  color: #fff;
-  margin: 0 15px;
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
-header nav a:hover {
-  color: #ffcc00; /* Gelber Akzent beim Hover */
+nav a:hover {
+  color: #ffcc00;
 }
 
-/* Hero / Slideshow */
+/* ====== Hero & Slideshow ====== */
 .hero {
   position: relative;
   height: 70vh;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
 }
 
 .slideshow {
-  position: absolute;
-  width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
+  width: 100%;
+  position: absolute;
 }
 
 .slide {
   display: none;
-  width: 100%;
   height: 100%;
 }
 
@@ -65,90 +62,114 @@ header nav a:hover {
 }
 
 .hero-text {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
   background: rgba(0, 64, 128, 0.7);
-  padding: 20px 30px;
+  padding: 20px;
   border-radius: 8px;
 }
 
-.hero .btn {
-  background: #ffcc00;
-  padding: 10px 20px;
-  margin-top: 20px;
+.hero-text h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.hero-text p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* ====== Buttons ====== */
+.btn {
   display: inline-block;
-  color: #000;
-  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #ffcc00;
+  color: #004080;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-weight: bold;
   transition: background 0.3s;
 }
 
-.hero .btn:hover {
+.btn:hover {
   background: #ffaa00;
 }
 
-/* Allgemeine Sektionen */
+/* ====== Inhalte ====== */
 section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
+  padding: 50px 20px;
+  text-align: center;
 }
 
-/* Karten/Grid */
+h2 {
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
 .grid {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
-  background: #fff;
-  padding: 20px;
+  background: white;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
   flex: 1 1 250px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 300px;
+  transition: transform 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Kontaktformular */
-#contact {
-  background: #e6f0ff;
-  border-radius: 10px;
-  padding: 40px 20px;
-  text-align: center;
+.card h3 {
+  color: #004080;
 }
 
+/* ====== Kontaktformular ====== */
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-bottom: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 12px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .contact-form button {
-  background: #004080;
-  color: #fff;
+  margin-top: 15px;
+  width: 100%;
   padding: 12px;
+  background: #004080;
+  color: white;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 6px;
   font-size: 16px;
+  cursor: pointer;
   transition: background 0.3s;
 }
 
@@ -156,16 +177,35 @@ section {
   background: #0066cc;
 }
 
-.contact-info p {
-  margin: 8px 0;
-  font-size: 18px;
+/* Kontakt Infos */
+.contact-info {
+  margin-top: 20px;
+  font-size: 16px;
 }
 
-/* Footer */
+.contact-info a {
+  color: #004080;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ====== Footer ====== */
 footer {
   background: #004080;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 15px;
   margin-top: 40px;
+}
+
+/* ====== Animationen ====== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
