@@ -74,17 +74,44 @@
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 Kurier & Umzug Hamburg – Alle Rechte vorbehalten</p>
-<section className="py-6 bg-gray-900 text-white text-center text-sm">
-  <div className="flex flex-col md:flex-row justify-center gap-6">
-    <a href="/impressum" className="hover:underline">Impressum</a>
-    <a href="/datenschutz" className="hover:underline">Datenschutz</a>
-    <a href="/agb" className="hover:underline">AGB</a>
-  </div>
+ {/* Footer mit Richtlinien */}
+<footer className="py-10 text-center bg-gray-800 text-white">
+<p>© {new Date().getFullYear()} Muster Kurier & Umzüge – Alle Rechte vorbehalten.</p>
+<div className="mt-4 space-x-6">
+<a href="#impressum" className="hover:underline">Impressum</a>
+<a href="#datenschutz" className="hover:underline">Datenschutz</a>
+<a href="#agb" className="hover:underline">AGB</a>
+</div>
+</footer>
+
+
+{/* Beispiel-Bereiche für Richtlinien */}
+<section id="impressum" className="py-20 max-w-4xl mx-auto px-6">
+<h2 className="text-2xl font-bold mb-4">Impressum</h2>
+<p>Muster Kurier & Umzüge · Musterstraße 1 · 20000 Hamburg</p>
+<p>Geschäftsführer: Max Mustermann</p>
 </section>
 
-  </footer>
+
+<section id="datenschutz" className="py-20 max-w-4xl mx-auto px-6 bg-gray-100">
+<h2 className="text-2xl font-bold mb-4">Datenschutzerklärung</h2>
+<p>
+Wir behandeln Ihre Daten vertraulich und geben sie nicht an Dritte weiter.
+Auf dieser Seite werden keine Cookies oder Tracker ohne Ihre Zustimmung gesetzt.
+</p>
+</section>
+
+
+<section id="agb" className="py-20 max-w-4xl mx-auto px-6">
+<h2 className="text-2xl font-bold mb-4">Allgemeine Geschäftsbedingungen (AGB)</h2>
+<p>
+Unsere AGB gelten für alle Kurier-, Umzugs- und Entrümpelungsaufträge.
+Mit der Auftragserteilung akzeptieren Sie diese Bedingungen.
+</p>
+</section>
+</div>
+);
+}
 
   <script src="script.js"></script>
 </body>
