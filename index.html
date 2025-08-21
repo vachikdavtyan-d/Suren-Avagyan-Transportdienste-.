@@ -1,90 +1,91 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Suren Avagyan Transportdienste</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header, footer { background: #2d2d2d; color: white; text-align: center; padding: 20px; }
-    nav a { margin: 0 15px; color: white; text-decoration: none; }
-    nav a:hover { color: #7CFC00; }
-    section { padding: 40px 20px; }
-    .leistungen { background: #f5f5f5; }
-    .kontakt { background: #e8fce8; }
-    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-    .karte iframe { width: 100%; height: 250px; border: none; }
-    .richtlinien { background: #2d2d2d; color: white; padding: 15px; font-size: 14px; }
-    .richtlinien a { color: white; margin: 0 10px; text-decoration: none; }
-    .richtlinien a:hover { color: #7CFC00; }
-  </style>
+  <title>Kurier & Umzug Hamburg</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>🚚 Kurier & Umzug Hamburg</h1>
+    <nav>
+      <a href="#services">Leistungen</a>
+      <a href="about.html">Über uns</a>
+      <a href="fahrzeuge.html">Fahrzeuge</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>Suren Avagyan Transportdienste</h1>
-  <nav>
-    <a href="#leistungen">Leistungen</a>
-    <a href="#ueberuns">Über uns</a>
-    <a href="#kontakt">Kontakt</a>
-  </nav>
-</header>
-
-<section id="leistungen" class="leistungen">
-  <h2>Unsere Leistungen</h2>
-  <ul>
-    <li>Express Kurier</li>
-    <li>Umzüge</li>
-    <li>Entrümpelung</li>
-  </ul>
-</section>
-
-<section id="ueberuns">
-  <h2>Über uns</h2>
-  <p>
-    Wir von Suren Avagyan Transportdienste in Hamburg stehen für Zuverlässigkeit,
-    Pünktlichkeit und professionellen Service. Egal ob kleine Expressfahrten
-    oder komplette Umzüge – wir sind Ihr starker Partner.
-  </p>
-</section>
-
-<section id="kontakt" class="kontakt">
-  <h2>Kontakt</h2>
-  <div class="grid">
-    <div>
-      <p><strong>Adresse:</strong><br>
-      Musterstraße 1<br>12345 Hamburg</p>
-
-      <p><strong>Telefon:</strong> 01234 56789<br>
-      <strong>E-Mail:</strong> info@suren-avagyan.de</p>
-
-      <p><strong>Öffnungszeiten:</strong><br>
-      Mo–Fr: 08:00 – 18:00 Uhr<br>
-      Sa: 09:00 – 14:00 Uhr<br>
-      So & Feiertags: geschlossen</p>
+  <!-- Slideshow -->
+  <section class="hero">
+    <div class="slideshow">
+      <div class="slide"><img src="sprinter1.jpg" alt="sprinter1.jpg"></div>
+      <div class="slide"><img src="sprinter2.jpg" alt="sprinter2.jpg"></div>
+      <div class="slide"><img src="wagon.jpg" alt="wagon.jpg"></div>
     </div>
-
-    <div class="karte">
-      <!-- Google Maps Beispiel -->
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.776338324986!2d9.993681815804424!3d53.55108438000556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18f07a6b95ab3%3A0x123456789!2sHamburg!5e0!3m2!1sde!2sde!4v1692548549211!5m2!1sde!2sde" 
-        allowfullscreen="" 
-        loading="lazy">
-      </iframe>
+    <div class="hero-text">
+      <h2>Schnell. Sicher. Zuverlässig.</h2>
+      <p>Ihr Partner für Kurier, Umzug und Entrümpelung in Hamburg</p>
+      <a href="about.html" class="btn">Mehr erfahren</a>
     </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section id="services" class="fade-in">
+    <h2>Unsere Leistungen</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Umzüge</h3>
+        <p>Privat- und Firmenumzüge – stressfrei und professionell.</p>
+      </div>
+      <div class="card">
+        <h3>Kurierfahrten</h3>
+        <p>Expresszustellung in Hamburg und ganz Deutschland.</p>
+      </div>
+      <div class="card">
+        <h3>Entrümpelung</h3>
+        <p>Schnelle und fachgerechte Entrümpelung von Wohnungen & Häusern.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="fade-in">
+    <h2>Kontakt</h2>
+    <p>Schreiben Sie uns Ihr Anliegen oder kontaktieren Sie uns direkt per Telefon oder WhatsApp.</p>
+
+    <form action="mailto:DEINEEMAIL@beispiel.de" method="post" enctype="text/plain" class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Nachricht:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Absenden</button>
+    </form>
+
+    <div class="contact-info">
+      <p>📞 Telefon: <a href="tel:+4915123456789">+49 151 23456789</a></p>
+      <p>💬 WhatsApp: <a href="https://wa.me/4915123456789" target="_blank">Nachricht senden</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Kurier & Umzug Hamburg – Alle Rechte vorbehalten</p>
+<section className="py-6 bg-gray-900 text-white text-center text-sm">
+  <div className="flex flex-col md:flex-row justify-center gap-6">
+    <a href="/impressum" className="hover:underline">Impressum</a>
+    <a href="/datenschutz" className="hover:underline">Datenschutz</a>
+    <a href="/agb" className="hover:underline">AGB</a>
   </div>
 </section>
 
-<footer>
-  <p>© 2025 Suren Avagyan Transportdienste – Alle Rechte vorbehalten.</p>
-</footer>
+  </footer>
 
-<section class="richtlinien" style="text-align:center;">
-  <a href="impressum.html">Impressum</a> | 
-  <a href="datenschutz.html">Datenschutz</a> | 
-  <a href="agb.html">AGB</a>
-</section>
-
+  <script src="script.js"></script>
 </body>
 </html>
-
