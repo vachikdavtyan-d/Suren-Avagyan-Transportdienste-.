@@ -209,15 +209,12 @@ h2 {
       padding: 20px;
     }
 
-    .richtlinien a {
-      color: white;              /* Standardfarbe weiß */
-      margin: 0 10px;
-      text-decoration: none;
-    }
+   footer {
+  background-color: #002366;  /* z. B. dunkelblau statt schwarz */
+  padding: 20px;
+  text-align: center;
+}
 
-    .richtlinien a:hover {
-      color: #7CFC00;           /* Hellgrün beim Hover */
-    }
   </style>
 </head>
 <body>
