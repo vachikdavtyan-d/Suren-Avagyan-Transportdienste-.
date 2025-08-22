@@ -189,13 +189,53 @@ h2 {
   text-decoration: none;
 }
 
-/* ====== Footer ====== */
-footer {
-  background: #004080;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muster Kurier & Umzüge</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    footer {
+      background: #2d2d2d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .richtlinien a {
+      color: white;              /* Standardfarbe weiß */
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .richtlinien a:hover {
+      color: #7CFC00;           /* Hellgrün beim Hover */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Inhalt deiner Seite -->
+
+  <footer>
+    <p>© 2025 Muster Kurier & Umzüge – Alle Rechte vorbehalten.</p>
+    <div class="richtlinien">
+      <a href="impressum.html">Impressum</a> | 
+      <a href="datenschutz.html">Datenschutz</a> | 
+      <a href="agb.html">AGB</a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
 }
 
 /* ====== Animationen ====== */
